@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Таймер медитации</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&family=Roboto:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="wrapper">
+    <div class="logo">
+    </div>
+    <form class="timer" onsubmit="app.submit(event)">
+        <div class="info">
+            Установить таймер на
+            <input
+            type="number"
+            name="time"
+            aria-label="Число минут для таймера"
+            value="10">
+            минут
+        </div>
+        <div class="countdown">
+            <div class="num" id="min_tens">0</div>
+            <div class="num" id="min">0</div>
+            <div class="dots">:</div>
+            <div class="num" id="sec_tens">0</div>
+            <div class="num" id="sec">0</div>
+        </div>
+        <div class="buttons">
+            <button type="submit" class="startButton">
+                <img src="./images/play-circle.svg" alt="Иконка play">
+                Запустить таймер
+            </button>
+        </div>
+    </form>
+    </div>
+</body>
+</html>
